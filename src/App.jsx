@@ -37,18 +37,30 @@
 import React from "react";
 import Navbar from "./components/navbar/navbar.jsx";
 import Footer from "./components/footer/footer.jsx";
+import highway from "/src/assets/highway.jpg";
+import "./App.css"; 
 
 function App() {
   return (
-    <main>
+    <>
       <Navbar />
-      <section id="home">
-        <h1>RaceRev Motorsport</h1>
-        <p>We support riders of all levels, from complete beginners to seasoned motorcycle enthusiasts, in finding the right gear and equipment. 
+      <main>
+        <section className="hero-image">
+          <div>
+            <img id="hero-highway" src={highway} alt="Highway Motorcycle Riders" />
+          </div>
+          <div>
+            <h1>RaceRev Motorsport</h1>
+          </div>
+        </section>
+
+        <section>
+          <p>We support riders of all levels, from complete beginners to seasoned motorcycle enthusiasts, in finding the right gear and equipment. 
           Our mission is to ensure every rider feels confident, safe, and well-equipped on the road.</p>
-      </section>
+        </section>
+      </main>
       <Footer />
-    </main>
+    </>
   );
 }
 
