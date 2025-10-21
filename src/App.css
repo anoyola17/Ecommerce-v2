@@ -1,47 +1,79 @@
-/* #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-} */
-
 #hero-highway{
-  width: auto;
-  height: 20em;
+  max-width: 100%;
+  height: auto;
+}
+
+.hero-container {
+  position: relative;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  font-family: "Arial Black", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.hero-centered--text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card-style{
+  background-color: #CFCFCF;
+  height: 450px;
+  color: black;
+  border-radius: 16px; 
+  overflow: hidden; 
+}
+
+.card-image--background{
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  background-color: #1D3557; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+}
+
+.cards-image{
+  height: 176px; 
+  width: 176px;  
+  border-radius: 9999px; /* rounded-full */
+  object-fit: cover;
+}
+
+.card-paragraph{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3.5em;
+  gap: 1.5em;
+}
+
+.card-title{
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.card-message{
+  font-size: 18px;
+}
+
+.top-paragraph{
+  margin-top: 0.5em;
+  font-size: 18px;
+  padding: 1.5em;
+}
+
+.bottom-paragraph{
+   margin-top: 2.5em;
+   font-size: 18px;
+   padding: 1.5em;
+}
+
+#bottom-paragraph--secondary{
+  margin-top: 1.5em;
 }

@@ -5,7 +5,7 @@
 }
 
 .footer {
-  background: black; /* dark footer */
+  background: #2F3131; /* dark footer */
   color: white;
   margin-top: 40px;
   padding: 40px 20px 20px;
@@ -22,6 +22,10 @@
 .footer h2{
     font-size: 18px;
     padding-bottom: 0.5em;
+}
+
+.footer p{
+    font-size: 16px;
 }
 
 .footer-links ul, .footer-contact ul {
@@ -61,4 +65,50 @@
   padding-top: 12px;
   font-size: 14px;
   color: white;
+}
+
+.flaticon-logo{
+  mix-blend-mode: multiply;
+  width: 20px;
+  height: 20px;
+}
+
+/* === Tablet Styles  === */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .footer-inner {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+    align-items: flex-start;
+  }
+
+  .footer h2 {
+    font-size: 20px;
+  }
+
+  .footer p{
+    font-size: 18px;
+  }
+
+  .footer-links,
+  .footer-contact {
+    width: 45%;
+  }
+}
+
+/* === Desktop Styles === */
+@media screen and (min-width: 1400px) {
+  .footer h2 {
+    font-size: 22px;
+  }
+
+  .footer-links a,
+  .footer-contact a,
+  .footer-contact p {
+    font-size: 20px;
+  }
+
+  .footer-bottom {
+    font-size: 20px;
+  }
 }
