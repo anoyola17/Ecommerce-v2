@@ -1,0 +1,160 @@
+.hero-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.hero-container {
+  position: relative;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  font-family: "Arial Black", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.hero-left--text {
+  position: absolute;
+  top: 65%;
+  left: 3%;
+  transform: translateY(-50%);
+  text-align: left;
+}
+
+.nav_button {
+  width: fit-content;
+  background-color: #e61111;
+  padding: 12px 20px;
+  border-radius: 6px;
+  border: 1px solid;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 15px;
+  margin-bottom: 35px;
+}
+
+.nav_button a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav_button:hover {
+  background-color: #e13a3a;
+}
+
+.card-slider {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+.card-style {
+  background-color: #cfcfcf;
+  height: 430px;
+  color: black;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.card-image--background {
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  background-color: #1d3557;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+}
+
+.cards-image {
+  height: 176px;
+  width: 176px;
+  border-radius: 9999px; /* rounded-full */
+  object-fit: cover;
+}
+
+.card-paragraph {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2.5em;
+  gap: 1.5em;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.card-message,
+#top-paragraph,
+#bottom-paragraph {
+  font-size: 18px;
+}
+
+#top-paragraph,
+#bottom-paragraph {
+  margin-bottom: 25px;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+/* TABLET */
+@media screen and (min-width: 768px) {
+  .hero-left--text {
+    top: 60%;
+    left: 5%;
+    transform: translateY(-50%);
+    font-size: 22px;
+  }
+
+  .card-slider .slick-slide {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .card-paragraph {
+    padding: 2em;
+  }
+
+  .card-title {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .card-message,
+  #top-paragraph,
+  #bottom-paragraph {
+    font-size: 20px;
+  }
+
+  #top-paragraph,
+  #bottom-paragraph {
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+  }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1024px) {
+  .hero-container img {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+  }
+
+  .hero-left--text {
+    top: 60%;
+    left: 5%;
+    transform: translateY(-50%);
+    font-size: 24px;
+  }
+
+  #top-paragraph,
+  #bottom-paragraph {
+    padding-left: 3.5em;
+    padding-right: 3.5em;
+    font-size: 22px;
+  }
+}
